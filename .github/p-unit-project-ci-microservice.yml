@@ -1,0 +1,34 @@
+name: P-UNIT-PROJECT-CI-MICROSERVICE-NODE
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  compliance:
+    name: Compliance
+    uses: gitdsoares/templates/.github/workflows/compliance.yml@main
+    permissions: write-all
+    with:
+      APP_NAME: ${{ vars.APP_NAME }}
+    secrets:
+      DOCKER_REGISTRY: ${{ secrets.DOCKER_REGISTRY }}
+      DOCKER_PAT: ${{ secrets.DOCKER_PAT }}
+
+  build:
+    name: Build
+    uses: gitdsoares/templates/.github/workflows/build.yml@main
+    needs: compliance
+    with:
+      APP_NAME: ${{ vars.APP_NAME }}
+    secrets:
+      DOCKER_REGISTRY: ${{ secrets.DOCKER_REGISTRY }}
+      DOCKER_PAT: ${{ secrets.DOCKER_PAT }}
+      GIT_PAT: ${{ secrets.GIT_PAT }}
