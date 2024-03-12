@@ -1,17 +1,25 @@
 name: P-UNIT-PROJECT-CI-MICROSERVICE-NODE
 
 on:
-  push:
-    branches:
-      - main
-
+  workflow_dispatch:
   pull_request:
     types:
       - closed
     branches:
       - main
+    paths-ignore:
+      - '**/README.md'
+      - '**/.gitignore'
+      - '**/.dockerignore'
+      - '**/.eslintrc.json'
 
 jobs:
+  tests:
+    name: Tests
+    uses: gitdsoares/templates/.github/workflows/tests.yml@main
+    with:
+      APP_NAME: ${{ vars.APP_NAME }}
+
   compliance:
     name: Compliance
     uses: gitdsoares/templates/.github/workflows/compliance.yml@main
@@ -25,7 +33,9 @@ jobs:
   build:
     name: Build
     uses: gitdsoares/templates/.github/workflows/build.yml@main
-    needs: compliance
+    needs:
+      - tests
+      - compliance
     with:
       APP_NAME: ${{ vars.APP_NAME }}
     secrets:
