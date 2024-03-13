@@ -1,15 +1,16 @@
 name: P-UNIT-PROJECT-CI-MICROSERVICE-NODE
 
 on:
-  push:
-    branches:
-      - main
-
+  workflow_dispatch:
   pull_request:
     types:
       - closed
     branches:
       - main
+    paths-ignore:
+      - '**/README.md'
+      - '**/.gitignore'
+      - '**/.dockerignore'
 
 jobs:
   compliance:
