@@ -2,7 +2,7 @@
 
 [![P-UNIT-PROJECT-CI-MICROSERVICE-NODE](https://github.com/gitdsoares/node-app/actions/workflows/p-unit-project-ci-microservice.yml/badge.svg?branch=main)](https://github.com/gitdsoares/node-app/actions/workflows/p-unit-project-ci-microservice.yml)
 
-This is a simple project made in Node.js, which has an automated Continuous Integration workflow.
+This is a simple project made in Node.js, which has an automated Continuous Integration workflow based on reusable templates.
 
 <br>
 
