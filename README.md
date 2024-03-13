@@ -2,15 +2,11 @@
 
 [![P-UNIT-PROJECT-CI-MICROSERVICE-NODE](https://github.com/gitdsoares/node-app/actions/workflows/p-unit-project-ci-microservice.yml/badge.svg?branch=main)](https://github.com/gitdsoares/node-app/actions/workflows/p-unit-project-ci-microservice.yml)
 
-<br>
-
-# Description
-
 This is a simple project made in Node.js, which has an automated Continuous Integration workflow.
 
 <br>
 
-# Tech Stack
+## Tech Stack
 
 <div>
   
@@ -32,7 +28,7 @@ This is a simple project made in Node.js, which has an automated Continuous Inte
 
 <br>
 
-# Running it locally
+## Running it locally
 
 1. Clone the project:
 
@@ -51,7 +47,7 @@ This is a simple project made in Node.js, which has an automated Continuous Inte
   cd ~/node-app
 ```
 
-4. Install the project's dependencies
+4. Install the project's dependencies:
 
 ```bash
   npm install
