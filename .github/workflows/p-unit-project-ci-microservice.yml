@@ -33,7 +33,9 @@ jobs:
   build:
     name: Build
     uses: gitdsoares/templates/.github/workflows/build.yml@main
-    needs: compliance
+    needs:
+      - tests
+      - compliance
     with:
       APP_NAME: ${{ vars.APP_NAME }}
     secrets:
