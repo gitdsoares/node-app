@@ -30,8 +30,8 @@ router.get('/sharks', function (req, res) {
 app.use(express.static(path));
 app.use('/', router);
 
-app.listen(port, function () {
+let server = app.listen(port, function () {
   logger.info('Node.js app listening on port ' + port + '!');
 });
 
-module.exports = app;
+module.exports = server;
