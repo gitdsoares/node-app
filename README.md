@@ -4,6 +4,24 @@
 
 This is a simple project made in Node.js, which has an automated Continuous Integration workflow based on reusable templates available on this [repository](https://github.com/gitdsoares/templates/tree/main/.github/workflows).
 
+Here is a brief description of the workflow executed in this Continuous Integration:
+
+1. Testing
+    - Installation of dependencies.
+    - Unit Tests.
+
+2. Compliance & Vulnerability Management
+    - Installation of tools.
+    - SAST Scan.
+    - File Scan.
+    - Image Scan.
+    - Publication of reports.
+
+3. Build
+    - Creation of versioning tag.
+    - Docker image build.
+    - Push of the Docker image to the Docker Registry.
+
 <br>
 
 ## Tech Stack

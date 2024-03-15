@@ -1,11 +1,12 @@
 {
-  "name": "nodejs-image",
+  "name": "node-app",
   "version": "1.0.0",
-  "description": "nodejs image",
+  "description": "Basic Node.js image.",
   "author": "David S. <david@example.com>",
   "license": "MIT",
   "main": "app.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "mocha **/app.test.js"
   },
   "keywords": [
@@ -14,11 +15,13 @@
     "express"
   ],
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.18.1",
+    "winston": "^3.12.0"
   },
   "devDependencies": {
     "chai": "^4.4.1",
     "chai-http": "^4.4.0",
-    "mocha": "^8.4.0"
+    "eslint": "^8.57.0",
+    "mocha": "^10.3.0"
   }
 }
