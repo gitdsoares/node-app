@@ -1,7 +1,7 @@
 {
   "name": "node-app",
   "version": "1.0.0",
-  "description": "Basic Node.js image.",
+  "description": "Basic Node.js image example.",
   "author": "David S. <david@example.com>",
   "license": "MIT",
   "main": "app.js",
