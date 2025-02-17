@@ -1,6 +1,7 @@
 {
   "name": "node-app",
   "version": "1.0.0",
+  "type": "module",
   "description": "Basic Node.js image example.",
   "author": "David S. <david@example.com>",
   "license": "MIT",
@@ -19,9 +20,11 @@
     "winston": "^3.12.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.20.0",
     "chai": "^4.4.1",
     "chai-http": "^4.4.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.20.1",
+    "globals": "^15.15.0",
     "mocha": "^10.3.0"
   }
 }
