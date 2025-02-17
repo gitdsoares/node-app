@@ -23,6 +23,7 @@ jobs:
   compliance:
     name: Compliance
     uses: gitdsoares/templates/.github/workflows/compliance.yml@main
+    needs: tests
     permissions: write-all
     with:
       APP_NAME: ${{ vars.APP_NAME }}
