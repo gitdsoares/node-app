@@ -4,6 +4,7 @@
   "description": "Basic Node.js image example.",
   "author": "David S. <david@example.com>",
   "license": "MIT",
+  "type": "module",
   "main": "app.js",
   "scripts": {
     "lint": "eslint .",
