@@ -1,0 +1,37 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Basic Node.js image example.",
+  "author": "David S. <david@example.com>",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha **/app.test.js"
+  },
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "dependencies": {
+    "express": "^4.21.2",
+    "winston": "^3.12.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.30.0",
+    "chai": "^4.4.1",
+    "chai-http": "^4.4.0",
+    "eslint": "^9.30.0",
+    "globals": "^15.15.0",
+    "mocha": "^10.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitdsoares/node-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gitdsoares/node-app/issues"
+  },
+  "homepage": "https://github.com/gitdsoares/node-app#readme"
+}
